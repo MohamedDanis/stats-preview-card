@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(233, 47%, 7%);
+    
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: hsl(244, 38%, 16%);
+    width: 60%;
+    height: 50%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.stats-text{
+    padding: 3rem;
+}
+.stats-text h1{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.stats-text h1 span{
+    color:  hsl(277, 64%, 61%);
+}
+.stats-text h4{
+    font-size: 0.7rem;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 8%;
+    line-height: 1.3rem;
+}
+.stats-img{
+    background:linear-gradient(135deg, rgba(107, 7, 169, 0.55) 6%, rgba(107, 7, 169, 0.55) 99%), url(image-header-desktop.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    border-radius: 8px;
+}
+.stats-num{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16%;
+}
+.stats-num h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 100%);
+}
+.stats-num h3{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.5rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 0.1rem;
+    margin-top: 5%;
+}
+.comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.attribution { font-size: 11px; text-align: center;color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* mobile */
+@media screen and (max-width:768px){
+    section{
+        width: 90%;
+        height: 80%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .stats-img{
+        width: 100%;
+        background:linear-gradient(135deg, rgba(107, 7, 169, 0.55) 6%, rgba(107, 7, 169, 0.55) 99%), url(image-header-mobile.jpg);
+        /* background-size: 100%; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30%;
+    }
+    .stats-text{
+        padding: 1rem;
+    }
+    .stats-text h1{
+        text-align: center;
+    }
+    .stats-text h4{
+        text-align: center;
+    }
+    .stats-text h1 br{
+        display: inline;
+    }
+    .stats-num{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 9%;
+        height: 61%;
+    }
+    .stats-num h2{
+        font-size: 1rem;
+    }
+    .stats-num h3{
+        font-size: 0.4rem;
+    }
+}
